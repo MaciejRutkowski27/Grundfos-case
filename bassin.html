@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Surroundings</title>
+        <link rel="stylesheet" href="css1/style123.css">
+        <link rel="stylesheet" href="https://use.typekit.net/lhx4dbi.css">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+        <style>
+          html {margin: 0; padding: 0; width: 100%; height: 100%;}
+            body { margin: 0; padding: 0; overflow-x:hidden;}
+        </style>
+    </head>
+<body>
+  
+
+      <div class="top">
+        <hr class="lines"> 
+  <h3 style="margin-top:0.25%">SURROUNDINGS</h3>
+  <hr class="lines"> 
+      </div>
+      <div class="m1234">
+      
+      <div class="listmap">
+        <div class="arrowleft">
+          <a href="fotex.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="76.212" height="71.427" viewBox="0 0 76.212 71.427">
+            <g id="arrow-square-left" transform="translate(-492 -188)">
+              <path id="Vector" d="M51.253,0H20.985C7.838,0,0,7.316,0,19.588V47.806C0,60.111,7.838,67.427,20.985,67.427H51.217c13.147,0,20.985-7.316,20.985-19.588V19.588C72.238,7.316,64.4,0,51.253,0ZM42.584,43.828a2.425,2.425,0,0,1,0,3.574,2.841,2.841,0,0,1-3.829,0L26.006,35.5a2.425,2.425,0,0,1,0-3.574l12.75-11.9a2.865,2.865,0,0,1,3.829,0,2.425,2.425,0,0,1,0,3.574L31.749,33.714Z" transform="translate(494 190)" fill="#ea684c"/>
+              <path id="Vector-2" data-name="Vector" d="M0,0H76.212V71.427H0Z" transform="translate(568.212 259.427) rotate(180)" fill="none" opacity="0"/>
+            </g>
+          </svg>
+          
+        </a>
+        </div>
+       <div id="myImgRes">
+        <img onclick="enlargeImg(event)" id="myImg" src="images/bassin.jpg" alt="Bassin 7" height="100px" width="200px"> 
+        
+       </div>
+      <div id="map">
+        <div id="imgonmap">
+            <img onclick="enlargeImg(event)"  src="images/bassin.jpg" alt="Bassin 7" height="100px" width="200px"> 
+            
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+     
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibXJ1dCIsImEiOiJjbDlncTltcmswYnRyM3ZxcmJ2MzIxa3ozIn0._8_ETGek5TvT8WhLcQyIaQ';
+    const monument = [10.2229681, 56.1642425];
+    const map = new mapboxgl.Map({
+    container: 'map',
+    // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+    style: 'mapbox://styles/mrut/cl9ic4onl00ay15puwqpx02gh',
+    center: monument,
+    zoom: 14
+    });
+
+    const marker6 = new mapboxgl.Marker( {color:'var(--orange)'})
+.setLngLat([10.2252144, 56.1640043])
+.addTo(map);
+    </script>
+    </div>
+    
+    <div class="fotex">
+      <div class="fotextext">
+      <h3 id="fotexhead">Bassin 7</h3> 
+      Street with plenty of social events and activities <br> <br>
+      Address: Havnebadet, Bassin 7, 8000 Aarhus <br> <br> 
+      Opening hours: <br>
+      Mon-Sun: 10:00-18:00
+      </div>  
+      <div class="goback">
+        <a class="goback1" href="surroundings.html">go back to the list</a>
+      </div>
+    </div>
+      
+      <div class="arrowright">
+        <a href="watersports.html">
+        <svg id="vuesax_bold_arrow-square-left" data-name="vuesax/bold/arrow-square-left" xmlns="http://www.w3.org/2000/svg" width="76.212" height="71.427" viewBox="0 0 76.212 71.427">
+          <g id="arrow-square-left">
+            <path id="Vector" d="M20.949,0H51.217C64.364,0,72.2,7.316,72.2,19.588V47.806c0,12.305-7.838,19.621-20.985,19.621H20.985C7.838,67.427,0,60.111,0,47.84V19.588C-.036,7.316,7.8,0,20.949,0Zm8.669,43.828a2.425,2.425,0,0,0,0,3.574,2.841,2.841,0,0,0,3.829,0L46.2,35.5a2.425,2.425,0,0,0,0-3.574l-12.75-11.9a2.865,2.865,0,0,0-3.829,0,2.425,2.425,0,0,0,0,3.574L40.453,33.714Z" transform="translate(2.01 2)" fill="#ea684c"/>
+            <path id="Vector-2" data-name="Vector" d="M0,71.427H76.212V0H0Z" transform="translate(0 0)" fill="none" opacity="0"/>
+          </g>
+        </svg>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="homebutton12">
+      <a href="surroundings.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="71.583" height="71.427" viewBox="0 0 71.583 71.427">
+      <g id="Home_buttons" data-name="Home buttons" transform="translate(-922.106 -969.573)">
+        <g id="vuesax_bold_home" data-name="vuesax/bold/home" transform="translate(366.106 781.573)">
+          <g id="home" transform="translate(556 188)">
+            <path id="Vector" d="M63.441,20.262,41.571,2.6a12.476,12.476,0,0,0-15.193-.034L4.507,20.262A13.273,13.273,0,0,0,.133,31.826L4.34,57.246a12.442,12.442,0,0,0,11.92,10.182H51.654A12.635,12.635,0,0,0,63.608,57.212l4.207-25.42A13.616,13.616,0,0,0,63.441,20.262ZM36.462,53.942a2.5,2.5,0,1,1-5.009,0V43.828a2.5,2.5,0,1,1,5.009,0Z" transform="translate(1.83 2)" fill="#292d32"/>
+            <path id="Vector-2" data-name="Vector" d="M0,0H71.583V71.427H0Z" transform="translate(71.583 71.427) rotate(180)" fill="none" opacity="0"/>
+            
+          </g>
+        </g>
+      </g>
+    </svg>
+    </a>
+    </div>
+      <script src="jsm.js"></script>
+      
+      </body>
+      </html>
